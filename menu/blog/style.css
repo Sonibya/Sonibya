@@ -82,6 +82,7 @@ section{
 	margin: auto;
 	border-top: 1px rgb(224, 211, 211) solid;
 	font-style: italic;
+	font-size: 11px;
 }
 
 
@@ -120,3 +121,129 @@ section{
 	font-size: 14px;
 	font-weight: 400;
 }
+
+
+
+/* responsive */
+
+/* laptop */
+@meedia (max-width: 1366px){
+	html{
+		font-size: 75%;
+	}
+}
+
+/* tablet */
+@media (max-width: 768px){
+	html{
+		font-size: 62.5%;
+	}
+
+	#hamburger-menu{
+		display: inline-block;
+		
+		
+	}
+
+	nav ul{
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		width: 30rem;
+		height: 100vh;
+		left: -100%;
+	}
+
+	.nav ul.active{
+		left: 0;
+	}
+
+
+	/* hero */
+	.container .hero-article .judul{
+		font-size: 20px;
+	}
+
+
+	/* container-article */
+	.container-article .hero-article1, .hero-article2, .hero-article3, .hero-article4{
+		width: 100%;
+	/* border: 1px solid blue; */
+		margin: auto;
+	}
+
+	.container-article .hero-article1 img, .hero-article2 img, .hero-article3 img, .hero-article4 img{
+		width: 100%;
+	}
+
+	.container-article .hero-article1 .judul, .hero-article2 .judul, .hero-article3 .judul, .hero-article4 .judul{
+		font-size: medium;
+	}
+
+	.tulisan{
+		padding: 18px;
+	}
+
+}
+
+
+/* smartphone */
+
+@media (max-width: 400px){
+
+
+	/* hero section */
+	.container{
+		margin-bottom: 20px;
+		width: 80%;
+	}
+
+	.container .judul-m-auto{
+		font-size: 16px;
+	}
+
+	.container-article{
+		margin: 30px 0px;
+	}
+
+	.container .hero-article .judul{
+		font-size: 14px;
+	}
+
+	.container .hero-article .isi{
+		font-size: 8px;
+	
+	}
+
+
+	/* article grid */
+	.container-article .hero-article{
+		width: 100%;
+		margin: 30px 0;
+	}
+
+	.container-article .hero-article img{
+		width: 100%;
+	}
+
+	.container-article .hero-article .judul{
+		font-size: 8px;
+	}
+
+	.container-article .hero-article .subjudul{
+		font-size: 6px;
+	}
+
+	.container-article .hero-article .isi{
+		font-size: 5px;
+	}
+
+	.container-article .hero-article .f-tulisan p{
+		font-size: 5px;
+	}
+
+	.tulisan{
+		padding: 8px;
+	}
+
+}	
