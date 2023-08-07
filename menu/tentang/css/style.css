@@ -64,3 +64,20 @@ section{
 .container img{
 	width: 100%;
 }
+
+
+
+/* RESPONSIVE */
+
+
+/* MOBILE */
+
+@media (max-width: 400px){
+	.judul{
+		font-size: medium;
+	}
+
+	.container .isi{
+		font-size: 12px;
+	}
+}
