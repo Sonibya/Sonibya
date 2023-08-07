@@ -1,0 +1,66 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Quicksand', sans-serif;
+	/*border: 1px solid;*/
+}
+
+/*navbar*/
+nav{
+	width: 80%;
+	display: flex;
+	margin: auto;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+.Logo{
+	font-size: 24px;
+	font-weight: 700;
+}
+
+ul{
+	display: flex;
+	font-weight: 600;
+	
+}
+
+
+li{
+	list-style: none;
+	margin-left: 50px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: black;
+}
+
+
+/*page*/
+
+section{
+	width: 100%;
+}
+
+.container{
+	width: 80%;
+	margin: auto;
+}
+
+.judul{
+	font-size: 30px;
+	font-weight: 600;
+	text-align: center;
+	margin: 50px;
+}
+
+.container p{
+	margin-bottom: 80px;
+	font-weight: 500;
+}
+
+.container img{
+	width: 100%;
+}
