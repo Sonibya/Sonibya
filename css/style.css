@@ -36,6 +36,9 @@ section{
 	width: 100%;
 	margin: auto;
 	margin-top: 50px;
+	border-radius: 15px;
+	overflow: hidden;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .hero-article img{
@@ -45,25 +48,31 @@ section{
 	font-weight: 400;
 }
 .tulisan{
-	padding: 50px 20px;
-	border-bottom: 1px solid;
+	padding:35px 20px;
+	/* border-bottom: 1px solid; */
 }
 
 .f-tulisan{
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
-	padding: 10px;
+	padding: 20px;
 	box-sizing: border-box;
 }
 .tulisan .judul{
-	font-size: 30px;
+	font-size: 20px;
 	font-weight: 600;
 }
 
 .tulisan .subjudul{
 	font-weight: 500;
 	font-style: italic;
+	font-size: 13px;
+}
+
+.tulisan .isi{
+	font-size: 13px;
+	padding-top: 8px;
 }
 
 .judul-m-auto{
@@ -89,6 +98,17 @@ section{
 	width: 100%;
 	/* border: 1px solid blue; */
 	margin: auto;
+	border-radius: 15px;
+	overflow: hidden;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	transition: 1s ease;
+}
+
+.container-article .hero-article1:hover, .hero-article2:hover, .hero-article3:hover, .hero-article4:hover{
+	box-shadow: rgba(17, 12, 46, 0.15) 0px 40px 9px -25px;
+	cursor: pointer;
+	margin-top: -8px;
+	
 }
 
 .container-article .hero-article1 img, .hero-article2 img, .hero-article3 img, .hero-article4 img{
@@ -100,25 +120,17 @@ section{
 /* responsive */
 
 /* laptop */
-@meedia (max-width: 1366px){
+@media screen and (max-width: 1366px){
 	html{
 		font-size: 75%;
 	}
 }
 
 /* tablet */
-@media (max-width: 768px){
+@media screen and (max-width: 768px){
 	html{
 		font-size: 62.5%;
 	}
-
-	#hamburger-menu{
-		display: inline-block;
-		
-		
-	}
-
-
 	/* hero */
 	.container .hero-article .judul{
 		font-size: 20px;
@@ -137,24 +149,39 @@ section{
 	}
 
 	.container-article .hero-article1 .judul, .hero-article2 .judul, .hero-article3 .judul, .hero-article4 .judul{
-		font-size: medium;
+		font-size: 14px;
 	}
-
+	.container-article .subjudul{
+		font-size: 10px;
+	}
 	.tulisan{
-		padding: 18px;
-	}
+		padding: 20px 20px;
 
+	}
+	.container-article .isi{
+		display: none;
+	}
+	
 }
 
 
 /* smartphone */
 
-@media (max-width: 400px){
+@media screen and (max-width: 400px){
 
 
 	/* hero section */
 	.container{
 		margin-bottom: 20px;
+	}
+
+	.container .hero-article .tulisan{
+		padding: 15px;
+	}
+
+	.container .hero-article .f-tulisan{
+		padding: 15px;
+		font-size: 8px;
 	}
 
 	.container .judul-m-auto{
@@ -163,22 +190,34 @@ section{
 
 	.container-article{
 		margin: 30px 0px;
+		grid-gap: 10px;
 	}
 	.container .hero-article .judul{
 		font-size: 14px;
 	}
 
+	.container .hero-article .subjudul{
+		font-size: 10px;
+	}
+
 	.container .hero-article .isi{
-		font-size: 8px;
+		font-size: 9px;
 	
+	}
+
+	.hero-article{
+		border-radius: 7px;
+	}
+
+	.container-article .hero-article1, .hero-article2, .hero-article3, .hero-article4{
+		border-radius: 7px;
 	}
 
 
 	/* article grid */
 	.container-article .hero-article1, .hero-article2, .hero-article3, .hero-article4{
-		width: 100%;
+		width: ;
 	/* border: 1px solid blue; */
-		margin: auto;
 	}
 
 	.container-article .hero-article1 img, .hero-article2 img, .hero-article3 img, .hero-article4 img{
@@ -202,6 +241,10 @@ section{
 	}
 
 	.tulisan{
+		padding: 8px;
+	}
+
+	.f-tulisan{
 		padding: 8px;
 	}
 
