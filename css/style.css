@@ -43,7 +43,19 @@ section{
 
 .hero-article img{
 	width: 100%;
+	height: 57%;
 }
+
+.hero-article .tulisan a{
+	text-decoration: none;
+	list-style: none;
+	color: black;
+}
+
+.hero-article .tulisan a:hover{
+	color: #690909f;
+}
+
 .hero-article p {
 	font-weight: 400;
 }
@@ -207,6 +219,10 @@ section{
 
 	.hero-article{
 		border-radius: 7px;
+	}
+
+	.hero-article img{
+		height: 23vh;
 	}
 
 	.container-article .hero-article1, .hero-article2, .hero-article3, .hero-article4{
