@@ -163,21 +163,10 @@ section{
 	}
 
 	.container .judul-m-auto{
-		font-size: 16px;
+		font-size: 20px;
 	}
 
-	.container-article{
-		margin: 30px 0px;
-	}
-
-	.container .hero-article .judul{
-		font-size: 14px;
-	}
-
-	.container .hero-article .isi{
-		font-size: 8px;
 	
-	}
 
 	.hero-article img{
 		height: 20vh;
@@ -195,15 +184,15 @@ section{
 	}
 
 	.container-article .hero-article .judul{
-		font-size: 8px;
+		font-size: 18px;
 	}
 
 	.container-article .hero-article .subjudul{
-		font-size: 6px;
+		font-size: 14px;
 	}
 
 	.container-article .hero-article .isi{
-		font-size: 5px;
+		font-size: 12px;
 	}
 
 	.container-article .hero-article .f-tulisan p{
@@ -211,7 +200,7 @@ section{
 	}
 
 	.tulisan{
-		padding: 8px;
+		padding: 5px;
 	}
 
 }	
