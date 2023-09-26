@@ -1,0 +1,206 @@
+*{
+	padding: 0;
+	margin: 0;
+    font-family: 'Quicksand', sans-serif;
+	/* border: 1px solid; */
+	text-decoration: none;
+}
+
+
+/*page*/
+
+section{
+	width: 100%;
+}
+
+.container{
+	width: 80%;
+	margin: auto;
+	margin-bottom: 80px;
+}
+
+.container-article{
+	width: 70%;
+	margin: 80px auto;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	/* flex-wrap: wrap; */
+	/*border: 1px solid blue;*/
+	
+}
+
+/*article*/
+
+.hero-article img{
+	width: 100%;
+	height: 55vh;
+	
+}
+
+.judul-m-auto{
+	text-align: center;
+	font-size: 30px;
+	font-weight: 500;
+	margin: 50px 0 0 0;
+}
+
+.f-tulisan{
+	display: flex;
+	width: 98%;
+	justify-content: space-between;
+	padding: 10px;
+	box-sizing: border-box;
+	margin: auto;
+	border-top: 1px rgb(224, 211, 211) solid;
+	font-style: italic;
+	font-size: 11px;
+}
+
+
+
+/*container article*/
+
+
+.container-article .hero-article{ 
+	width: 80%;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	/*border: 1px solid;*/
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 50px;
+}
+
+.hero-article a{
+	color: black;
+	background: none;
+}
+
+.hero-article a:hover{
+	background: none;
+	color: black;
+}
+
+.container-article .hero-article .judul{
+
+	font-size: 22px;
+	font-weight: 500;
+}
+
+.container-article .hero-article .tulisan{
+	padding: 20px;
+}
+
+.container-article .hero-article .subjudul{
+	margin-top: 2px;
+	margin-bottom: 3px;
+	font-weight: 500;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.container-article .hero-article p{
+	font-size: 14px;
+	font-weight: 400;
+}
+
+
+
+/* responsive */
+
+/* laptop */
+@meedia (max-width: 1366px){
+	html{
+		font-size: 75%;
+	}
+}
+
+/* tablet */
+@media (max-width: 768px){
+	html{
+		font-size: 62.5%;
+	}
+
+	
+
+	/* hero */
+	.container .hero-article .judul{
+		font-size: 20px;
+	}
+
+
+	/* container-article */
+	.container-article .hero-article1, .hero-article2, .hero-article3, .hero-article4{
+		width: 100%;
+	/* border: 1px solid blue; */
+		margin: auto;
+	}
+
+	.container-article .hero-article1 img, .hero-article2 img, .hero-article3 img, .hero-article4 img{
+		width: 100%;
+	}
+
+	.container-article .hero-article1 .judul, .hero-article2 .judul, .hero-article3 .judul, .hero-article4 .judul{
+		font-size: medium;
+	}
+
+	.tulisan{
+		padding: 18px;
+	}
+
+}
+
+
+/* smartphone */
+
+@media (max-width: 400px){
+
+
+	/* hero section */
+	.container{
+		margin-bottom: 20px;
+		width: 80%;
+	}
+
+	.container .judul-m-auto{
+		font-size: 20px;
+	}
+
+	
+
+	.hero-article img{
+		height: 20vh;
+	}
+
+
+	/* article grid */
+	.container-article .hero-article{
+		width: 100%;
+		margin: 30px 0;
+	}
+
+	.container-article .hero-article img{
+		width: 100%;
+	}
+
+	.container-article .hero-article .judul{
+		font-size: 18px;
+	}
+
+	.container-article .hero-article .subjudul{
+		font-size: 11px;
+	}
+
+	.container-article .hero-article .isi{
+		font-size: 11px;
+	}
+
+	.container-article .hero-article .f-tulisan p{
+		font-size: 5px;
+	}
+
+	.tulisan{
+		padding: 5px;
+	}
+
+}	
