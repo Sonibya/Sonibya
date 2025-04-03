@@ -1,3 +1,38 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Quicksand', sans-serif;
+	/*border: 1px solid;*/
+}
+
+
+/*page*/
+
+section{
+	width: 100%;
+}
+
+.container{
+	width: 80%;
+	margin: auto;
+}
+
+.judul{
+	font-size: 30px;
+	font-weight: 600;
+	text-align: center;
+	margin: 50px;
+}
+
+.container p{
+	margin-bottom: 80px;
+	font-weight: 500;
+}
+
+.container img{
+	width: 100%;
+}
+
 /* Galeri Foto */
 .gallery {
     display: grid;
@@ -18,3 +53,21 @@
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
+
+
+
+/* RESPONSIVE */
+
+
+/* MOBILE */
+
+@media (max-width: 400px){
+	.judul{
+		font-size: medium;
+	}
+
+	.container .isi{
+		font-size: 12px;
+	}
+}
+
