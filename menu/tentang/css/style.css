@@ -1,51 +1,20 @@
-*{
-	padding: 0;
-	margin: 0;
-	font-family: 'Quicksand', sans-serif;
-	/*border: 1px solid;*/
+/* Galeri Foto */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
 }
 
-
-/*page*/
-
-section{
-	width: 100%;
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.container{
-	width: 80%;
-	margin: auto;
-}
-
-.judul{
-	font-size: 30px;
-	font-weight: 600;
-	text-align: center;
-	margin: 50px;
-}
-
-.container p{
-	margin-bottom: 80px;
-	font-weight: 500;
-}
-
-.container img{
-	width: 100%;
-}
-
-
-
-/* RESPONSIVE */
-
-
-/* MOBILE */
-
-@media (max-width: 400px){
-	.judul{
-		font-size: medium;
-	}
-
-	.container .isi{
-		font-size: 12px;
-	}
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
